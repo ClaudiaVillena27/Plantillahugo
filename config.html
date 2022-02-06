@@ -1,0 +1,208 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Hugo-profile"
+theme: "./.."
+relativeURLs: true
+
+googleanalytics: UA-167646412-8
+disqusShortname:
+Paginate: 3
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+enableEmoji: true
+
+# menus
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blog
+      weight: 1
+
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /ew
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /34545
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  version: 3
+  customCSS: false
+
+  favicon: "/images/fav.png"
+  description: "A high performance hugo theme for personal portfolio and blog."
+
+  # home
+  disable_home: false
+  profile_image: "/images/FotoCV.jpg"
+  name: "Claudia Villena"
+  namecolor: ffc107
+  profession: "Political scientist"
+  github: "https://github.com/ClaudiaVillena27"
+  linkedin: "https://www.linkedin.com/in/claudiavillenatagle/"
+  facebook: "https://www.facebook.com/claudia.villena.52"
+
+
+  #Custom social links
+  # customSocialLinks:
+  #   - imageURL: "https://hugo-profile.netlify.app/images/fav.png"
+  #     url: "https://gohugo.com"
+  #   - fontAwesomeIconName: "fa fa-envelope"
+  #     url: "https://gmail.com"
+  
+  # About
+  disable_about: false
+  descripe_l1_person: "Hello! My name is Claudia Villena. I graduated in Political Science and Government from the Pontificia Universidad Catolica del Peru (PUCP). I got an outstanding mention in my thesis investigation about corruption in public procurement."
+  descripe_l2_person: "I am currently working as an academic assistant in the PUCP, in the specialization of Political Science. I am engaged in teaching activities as a Teachers's assistant in Political Economics at the same department. Prior to joining the PUCP, I worked as a project assistant in the Municipality of Miraflores, in the department of Urban Mobility and as Research Assistant, in the Jurado Nacional de Elecciones (JNE). By the time, i have been working on developing my abilities in Data Science and quantitative methods of research. My goal is to develop my professional career in corruption and security field applying my analytical skills."
+  skills:
+    - name: SPSS
+      percentage: 90
+    - name: R Studio
+      percentage: 85
+    - name: Python
+      percentage: 50
+    - name: Google Data Studio
+      percentage: 90
+
+  # Experience
+  disable_experience: false
+  experience:
+    - company: "Pontificia-Universidad-Católica-del-Perú"
+      #id: "google-developer"   // use this, when you want to change the id(used for navigation)
+      role: "Academic Assistant"
+      startdate: Jul 2021
+      enddate: present
+      featuredpoints:
+        - point: Attend the academic affairs of the Political Science Specialty, Social Science.
+    - company: "DNEF-JNE"
+      #id: "facebook-developer" // use this, when you want to change the id(used for navigation)
+      role: "Research Assistant for the Visualization of data"
+      startdate: Mar 2021
+      enddate: Jun 2021
+      featuredpoints:
+        - point: Assistance in statistical analysis and visualization of data from research projects.
+        - point: Assistance in the application of surveys and collection of quantitative and qualitative information.
+        - point: Data analysis in R
+    - company: "Municipalidad-de-Miraflores"
+      #id: "amazon-developer" // use this, when you want to change the id(used for navigation)
+      role: "Project Assistant"
+      startdate: Jan 2020
+      enddate: Feb 2021
+      featuredpoints:
+        - point: Support in the elaboration of the Strategic Plan of the Municipality of Miraflores, departament of Urban Mobility.
+        - point: Data analysis in R.
+        - point: Development of visualization boards in Google DataStudio
+  # Education
+  disable_education: false
+  education:
+    - degree: "Political Science"
+      branch: "Social Science"
+      university: "Pontificia Universidad Católica del Perú"
+      startedyear: "2014"
+      graduation: "2019"
+    - degree: "Political Science"
+      branch: "Student exchange semester"
+      university: "Centro de Investigación y Docencia Económica. CIDE"
+      startedyear: "2019"
+    - degree: "Corruption"
+      branch: "Business Strategies for A Better World Specialization"
+      university: "University of Pensilvania"
+      startedyear: "2022"
+
+  # Projects
+  disable_projects: false
+  projects:
+    - name: "The Construction Club: an approach to study corruption in public procurement in Peru (2002-2016)"
+      img: "/images/Tesis.jpg"
+      githublink: "https://tesis.pucp.edu.pe/repositorio/handle/20.500.12404/17882"
+      featuredlink: "/"
+      description: "This thesis developed a response to the phenomenon of corruption in the construction of public works from the political economics field."
+    - name: "In the shadow of legality: the causes of corruption in public procurements (2011-2014)"
+      img: "/images/Cusco.jpg"
+      githublink: "https://tesis.pucp.edu.pe/repositorio/handle/20.500.12404/17164"
+      featuredlink: "/"
+      description: "This study proposed a framework to study the causes of corruption in the construction of public procurement analizing two case studies: Vía de Evitamiento and the Antonio Lorena Hospital in Cusco."   
+    - name: "💡 Yo ando sin COVID-19" 
+      img: "/images/Miraflores-proyecto.jpg"
+      githublink: "https://www.facebook.com/page/112797123803123/search/?q=miraflores"
+      featuredlink: "/"
+      description: "With the Decision Lab team and the Municipality of Miraflores, we used behavioral science tools to reduced the risk of COVID-19 infection."
+    - name: "Chatbot DAVI"
+      img: "/images/Chatbot.jpg"
+      githublink: "https://www.facebook.com/decisionlabPUCP/posts/295907282158772"
+      featuredlink: "/"
+      description: "With the Decision Lab team, MDP Consulting, Data Science Research Peru and Transparency Peru, we developed a virtual assistant that helped answer questions about the 2021 General Elections."
+    - name: "Analysis of the experiences and degrees of tolerance to corruption in Peru (2019)"
+      img: "/images/Index.png"
+      githublink: "https://github.com/ClaudiaVillena27/Corruption_peru"
+      featuredlink: "/"
+      description: "This report analyze the attitudes and experiences of Peruvians regarding corrupt behavior."   
+
+  # Achievements
+  disable_achievements: false
+  achievements:
+    - title: Bachelor of Social Sciences. Mention in Political Science and Government
+      description: Pontificia Universidad Católica del Perú PUCP
+      img: "/images/bachillera.jpg"
+      #url: https://example.com
+    - title: Degree in Political Science and Government
+      description: Pontificia Universidad Católica del Perú PUCP
+      img: "/images/titulo.jpg"
+      # url: https://example.com
+    - title: Workshop on Statistical Tools for Socio-Analysis Politician
+      description: CISEPA PUCP
+      img: "/images/Estadistico.jpg"
+    - title:  Training Course in Modernization of the Public Management
+      description: Escuela de Gobierno y Políticas Públicas PUCP
+      img: "/images/modernizacion.jpg"
+    - title:  Introduction to Impact Assessment Workshop
+      description: CISEPA PUCP
+      img: "/images/Evalucion_impacto.jpg"
+    - title:  Introduction to Social Research Workshop
+      description: CISEPA PUCP
+      img: "/images/Investigacion_social.jpg"
+    - title:  Behavioral Design 
+      description: Instituto Mexicano de Economía del Comportamiento
+      img: "/images/economia_comportamiento.jpg"
+    - title: Statistical analysis of data with r 
+      description: PeruStat
+      img: "/images/Analisis_estadistico_R.jpg"
+    - title: Data analysis, reporting and visualization with R markdown 
+      description: Ciencia de Datos Ecuador
+      img: "/images/r.jpg"
+    - title: Data visualization georeferenced in R 
+      description: SDC- Learning
+      img: "/images/visualizacion_datos.jpg"
+
+  # Contact
+  disable_contact: false
+  contact_content: My inbox is always open. Whether you have a question or  want to star an investigation, I'll try my best to get back to you!
+  email: "claudia.villena@pucp.edu.pe"
+
+  # Footer
+  socialiconfooter: true
+  recentposts: true
+
+  # Blog
+  showdescription: false
+  tweet: true
